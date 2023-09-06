@@ -88,6 +88,8 @@ const AddProduct = () => {
     <div className={styles.container}> {/* Apply the container class */}
       <h1>Add Product</h1>
       <form className={styles.form} onSubmit={handleSubmit}> {/* Apply the form class */}
+
+      
         <div className={styles.formGroup}>
           <label htmlFor="product_id">Product ID:</label>
           <input
@@ -112,17 +114,7 @@ const AddProduct = () => {
             className={styles.inputField} 
           />
         </div>
-        <div className={styles.formGroup}>
-          <label htmlFor="product_description">Product Description:</label>
-          <textarea
-            id="product_description"
-            name="product_description"
-            value={formData.product_description}
-            onChange={handleChange}
-            required
-            className={styles.textareaField} 
-          />
-        </div>
+        
         <div className={styles.formGroup}>
           <label htmlFor="product_category">Product Category:</label>
           <input
@@ -133,6 +125,19 @@ const AddProduct = () => {
             onChange={handleChange}
             required
             className={styles.inputField} 
+          />
+        </div>
+        <div className={styles.formGroup}>
+          <label htmlFor="price">Price:</label>
+          <input
+            type="number"
+            id="price"
+            name="price"
+            value={formData.price}
+            onChange={handleChange}
+            required
+            className={styles.inputField} 
+            placeholder='Enter Price Only upto 2 Decimal Places'
           />
         </div>
         <div className={styles.formGroup}>
@@ -171,22 +176,25 @@ const AddProduct = () => {
             className={styles.inputField} 
           />
         </div>
-        <div className={styles.formGroup}>
-          <label htmlFor="price">Price:</label>
-          <input
-            type="number"
-            id="price"
-            name="price"
-            value={formData.price}
-            onChange={handleChange}
-            required
-            className={styles.inputField} 
-            placeholder='Enter Price Only upto 2 Decimal Places'
-          />
-        </div>
+        
         <div className={styles.formGroup}>
           <label htmlFor="urls">Image URLs (comma-separated):</label>
-          <input
+          <textarea
+            id="urls"
+            name="urls"
+            value={formData.urls.join(',')}
+            onChange={(e) => {
+              const urls = e.target.value.split(',');
+              setFormData((prevData) => ({
+                ...prevData,
+                urls,
+              }));
+            }}
+            required
+           
+            className={styles.textareaField} 
+          />
+          {/* <input
             type="text"
             id="urls"
             name="urls"
@@ -200,6 +208,18 @@ const AddProduct = () => {
             }}
             required
             className={styles.inputField} 
+          /> */}
+        </div>
+        <div className={styles.formGroup}>
+          <label htmlFor="product_description">Product Description:</label>
+          <textarea
+            id="product_description"
+            name="product_description"
+            value={formData.product_description}
+            onChange={handleChange}
+            required
+           
+            className={styles.textareaField} 
           />
         </div>
         <div className={styles.formGroup}>

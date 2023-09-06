@@ -38,7 +38,7 @@ export default function Dashboard() {
 
           if (response.ok) {
             const data = await response.json();
-            // console.log("Dahboard ",data)
+            console.log("Dahboard ",data)
 
             setProducts(data);
           } else {
@@ -99,7 +99,8 @@ export default function Dashboard() {
   
   return (
     <div className={styles.container}>
-      <h1>Product Dashboard</h1>
+      <div className={styles.heading}>
+      <h1>Product Dashboard</h1></div>
       <Link href="/product/add">Add Product</Link>
       <table>
         <thead>
@@ -133,6 +134,7 @@ export default function Dashboard() {
                 <ul>
                   {product[8].map((imageUrl, imgIndex) => (
                     <li key={imgIndex}>
+                      {console.log("URL IS ",imageUrl.trim())}
                       <img
                         src={imageUrl}
                         alt={`Product Image ${imgIndex + 1}`}

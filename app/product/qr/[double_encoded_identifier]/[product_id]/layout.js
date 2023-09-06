@@ -10,9 +10,9 @@ export async function generateMetadata({ params, searchParams }, parent) {
 
 export default function RootLayout({ children }) {
     return (
-      <html lang="en">
-        <body>{children}</body>
-      </html>
+      <section>
+        {children}
+      </section>
     )
   }
   
