@@ -1,0 +1,67 @@
+/* AddProduct.module.css */
+
+/* Container */
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f4f4f4;
+    font-family: Arial, sans-serif;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Form Title */
+  .container h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  /* Form Styles */
+  .form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .form label {
+    flex-basis: 45%;
+    margin-bottom: 10px;
+  }
+  
+  /* Add the inputField class for styling input elements */
+  .form input.inputField,
+  .form textarea.inputField {
+    flex-basis: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  /* Apply this class to textareas */
+  .form textarea.inputField {
+    resize: vertical; /* Allow vertical resizing for textareas */
+  }
+  
+  .form button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .form button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Responsive Styles */
+  @media screen and (max-width: 600px) {
+    .form label {
+      flex-basis: 100%;
+    }
+  }
+  

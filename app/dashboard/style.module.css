@@ -1,0 +1,124 @@
+/* dashboard.css */
+
+/* Overall styling */
+.container {
+  max-width: 100%;
+  margin: 0px auto;
+  padding: 40px 10px;
+  /* background-color: #f4f4f4; */
+  font-family: Arial, sans-serif;
+}
+
+/* Header styles */
+.container h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+
+}
+
+/* Table styles */
+.container table {
+  width: 100%;
+  background-color: #fff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  overflow-x: auto; /* Enable horizontal scrolling for small screens */
+}
+
+.container thead {
+  background-color: #007bff;
+  color: #fff;
+}
+
+.container thead th {
+  padding: 12px;
+  text-align: left;
+}
+
+.container tbody td {
+  padding: 12px;
+  border-bottom: 1px solid #ccc;
+}
+
+/* Link styles */
+.container a {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #ff8c00;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+.container a:hover {
+  background-color: #ff9100;
+}
+
+/* Image styles */
+.container ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.container ul li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.container ul li img {
+  width: 70px; /* Set the image size to 200px */
+  height: auto;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* Add this CSS to your stylesheet (e.g., style.module.css) */
+/* Customize the button styles as needed */
+
+/* Button Container (optional) */
+.download-button-container {
+  text-align: center; /* Center the button */
+}
+
+/* Button Style */
+.downloadButton {
+  width: 50px;
+  height: 50px;
+  font-size: 14px;
+  cursor: pointer;
+
+}
+
+/* Button Hover Effect */
+.downloadButton:hover {
+  background-color: #d39804; /* Darker blue on hover */
+}
+
+
+/* Responsive styles */
+@media screen and (max-width: 1060px) {
+  .container table {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .container table {
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .container table {
+    font-size: 10px;
+  }
+}
+
+@media screen and (max-width: 300px) {
+  .container table {
+    font-size: 8px;
+  }
+}
