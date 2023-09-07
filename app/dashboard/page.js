@@ -5,11 +5,12 @@ import Link from 'next/link';
 import { useEffect, useState } from 'react';
 import styles from './style.module.css';
 import {getApiUrl} from '../utils'
-
+import { useRouter } from 'next/navigation'
 
 export default function Dashboard() {
   // const proc_url =process.env['DOMAIN_URL'];
   const [products, setProducts] = useState([]);
+  const router = useRouter();
   // const [url,setUrl]=useState(process.env['DOMAIN_URL'])
   
   // console.log('URL BEFORE USE EF',url)
@@ -20,9 +21,17 @@ export default function Dashboard() {
       const fetchProducts = async () => {
         try {
           // Replace 'your-identifier' with your actual identifier value
-          // window.sessionStorage.getItem('Identifier')
+          
           const identifier =
-            '9a89ec8fc502dd86d83ca4478779691ed0345747f166c44c7387c27c04c009db';
+          window.sessionStorage.getItem('Identifier');
+
+
+          if (identifier==null)
+          {
+            router.push('/login')
+            return
+          }
+
 
           const url = getApiUrl();
 
@@ -60,8 +69,7 @@ export default function Dashboard() {
   const handleDownloadQR = async (product) => {
     try {
       // window.sessionStorage.getItem('Identifier')
-      const identifier =
-        '9a89ec8fc502dd86d83ca4478779691ed0345747f166c44c7387c27c04c009db';
+      const identifier =window.sessionStorage.getItem('Identifier');
         const url = getApiUrl();
       const qrResponse = await fetch(`${url}/api/qr/generate`, {
         method: 'POST',

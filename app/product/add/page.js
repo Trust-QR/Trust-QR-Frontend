@@ -1,10 +1,24 @@
 'use client';
 
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import styles from './style.module.css'; // Import the CSS
+import { useRouter } from 'next/navigation'
 
 const AddProduct = () => {
   const url=process.env['DOMAIN_URL'];
+  const router = useRouter();
+
+  useEffect(()=>{
+    const identifier =
+        window.sessionStorage.getItem('Identifier');;
+        
+      if (identifier==null)
+        {
+          router.push('/login')
+          return
+        }
+  },[])
+
   const [formData, setFormData] = useState({
     product_id: '',
     product_name: '',
@@ -44,8 +58,7 @@ const AddProduct = () => {
       // Submit the form data to your API or perform other actions here
       // window.sessionStorage.getItem('Identifier')
       const identifier =
-        '9a89ec8fc502dd86d83ca4478779691ed0345747f166c44c7387c27c04c009db';
-
+        window.sessionStorage.getItem('Identifier');;
       const addRes = await fetch(`${url}/api/product/add`, {
         method: 'POST',
         headers: {

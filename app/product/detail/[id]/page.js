@@ -1,6 +1,7 @@
 // pages/product/[productId].js
 'use client';
 
+import { useRouter } from 'next/navigation'
 import { useEffect, useState } from 'react';
 import { useParams } from 'next/navigation'
 import styles from './style.module.css'; // Import the CSS module
@@ -8,17 +9,22 @@ import styles from './style.module.css'; // Import the CSS module
 const ProductDetails = () => {
   const url =process.env['DOMAIN_URL']
   const params = useParams()
+  const router = useRouter();
 
   const [product, setProduct] = useState(null);
 
   useEffect(() => {
     // Fetch product details based on the productId
     const fetchProductDetails = async () => {
-        // window.sessionStorage.getItem('Identifier')
+        
         const identifier =
-            '9a89ec8fc502dd86d83ca4478779691ed0345747f166c44c7387c27c04c009db';
+            window.sessionStorage.getItem('Identifier');
+        if (identifier==null)
+            {
+              router.push('/login')
+              return
+            }
 
-        // window.sessionStorage.getItem('ProductID')
         const productId=params.id
 
       try {
