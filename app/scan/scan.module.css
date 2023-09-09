@@ -1,0 +1,334 @@
+.html_form {
+    padding-top: 40px;
+    /* background-image: url("https://apparelmagic.com/wp-content/uploads/blur-1850082_1920.jpg"); */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* background-color: green; */
+    font-size: 20px;
+    gap: 50px;
+
+    background-color: #00dbde;
+    background-image: linear-gradient(315deg, #00dbde 0%, #fc00ff 100%);
+}
+
+.heading h1 {
+    font-size: 48px;
+    color: whitesmoke;
+}
+
+.per_info {
+    display: flex;
+    /* background-image: url("https://isdi.in/blog/wp-content/uploads/2021/05/Fashion-Design-Tools.jpg") ; */
+    justify-content: space-between;
+    flex-direction: column;
+    box-sizing: border-box;
+
+    background-color: #fbab7e;
+    background-image: linear-gradient(62deg, #fbab7e 0%, #f7ce68 100%);
+
+    border-radius: 20px;
+    padding: 60px 50px;
+    margin-bottom: 70px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.clothId {
+    margin: 20px;
+    padding: 5px 10px;
+    font-size: 18px;
+}
+
+.sizeId {
+    margin: 20px;
+    padding: 5px 20px;
+    font-size: 18px;
+    border-radius: 10px;
+}
+
+.brandId {
+    margin: 20px 37px;
+    padding: 5px 10px;
+    font-size: 18px;
+    border-radius: 10px;
+}
+
+.clothTypeId {
+    margin: 20px;
+    padding: 5px 10px;
+    font-size: 18px;
+    border-radius: 10px;
+}
+
+.my_btn {
+    width: 200px;
+    padding: 15px;
+    border-radius: 999px;
+    font-size: 24px;
+    margin-left: 200px;
+    margin-right: 200px;
+    cursor: pointer;
+    margin-top: 30px;
+    font-weight: bold;
+}
+
+.my_btn:hover {
+    background-color: #fc8f00;
+}
+
+.brand {
+    border-radius: 20px;
+}
+
+label.brandId {
+    border-radius: 10px;
+}
+
+.brand,
+.file {
+    color: #382a2a;
+}
+
+@media only screen and (min-width: 949px) and (max-width: 1024px) {
+    .heading h1 {
+        font-family: "Times New Roman", Times, serif;
+        font-size: 46px;
+        font-weight: 700;
+    }
+}
+
+@media only screen and (min-width: 799px) and (max-width: 948px) {
+    .per_info {
+        font-size: 22px;
+    }
+
+    .my_btn {
+        font-size: 22px;
+    }
+}
+
+@media only screen and (min-width: 569px) and (max-width: 798px) {
+    .heading h1 {
+
+        font-size: 44px;
+        font-weight: 700;
+    }
+
+    .per_info {
+        font-size: 22px;
+        /* padding: 0px; */
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .my_btn {
+        font-size: 22px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .clothId {
+        margin: 12px 0px;
+        padding: 12px 0px;
+        font-size: 18px;
+    }
+
+    .brand {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .brandId {
+        margin: 0;
+        margin-top: 15px;
+        width: 60%;
+    }
+}
+
+@media only screen and (min-width: 300px) and (max-width: 568px) {
+    .heading h1 {
+
+        font-size: 30px;
+        font-weight: 700;
+    }
+
+    .per_info {
+        font-size: 22px;
+        /* padding: 0px; */
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+
+        padding: 27px 17px;
+    }
+
+    .cloth {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .my_btn {
+        font-size: 18px;
+        margin-left: auto;
+        margin-right: auto;
+        width: 150px;
+    }
+
+    .clothId {
+        margin: 12px 0px;
+        padding: 12px 0px;
+        font-size: 14px;
+    }
+
+    .brand,
+    .file {
+        display: flex;
+        flex-direction: column;
+        font-size: 18px;
+    }
+
+    .brandId {
+        margin: 0;
+        margin-top: 15px;
+        width: 60%;
+        font-size: 14px;
+    }
+}
+
+@media only screen and (min-width: 249px) and (max-width: 300px) {
+    .html_form {
+        padding: 0;
+        padding-top: 40px;
+    }
+
+    .heading h1 {
+
+        font-size: 24px;
+        font-weight: 700;
+    }
+
+    .per_info {
+        font-size: 14px;
+        /* padding: 0px; */
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+
+        padding: 15px 7px;
+    }
+
+    .cloth {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .my_btn {
+        font-size: 15px;
+        margin-left: auto;
+        margin-right: auto;
+        width: 110px;
+        margin-bottom: 20px;
+    }
+
+    .clothId {
+        /* margin: 12px 0px; */
+        /* padding: 12px 0px; */
+        font-size: 12px;
+        margin: 0;
+
+    }
+
+    .brand,
+    .file {
+        display: flex;
+        flex-direction: column;
+        font-size: 14px;
+        padding: 5px;
+    }
+
+    .brandId {
+        margin: 0;
+        margin-top: 15px;
+        width: 60%;
+        font-size: 12px;
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
+
+@media only screen and (min-width: 100px) and (max-width: 248px) {
+    .html_form {
+        padding: 0;
+        padding-top: 40px;
+        margin: 0;
+
+    }
+
+    .heading h1 {
+        text-align: center;
+        font-size: 20px;
+        font-weight: 700;
+        line-height: 32px;
+    }
+
+    .per_info {
+        /* display: none; */
+        font-size: 14px;
+        /* padding: 0px; */
+        width: 70vw;
+        margin-left: auto;
+        margin-right: auto;
+
+        padding: 15px 0px;
+    }
+
+    .cloth {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .my_btn {
+        font-size: 15px;
+        margin-left: auto;
+        margin-right: auto;
+        width: 64vw;
+        /* margin: 0; */
+        padding: 7px;
+        margin-right: 10px;
+        margin-bottom: 20px;
+        margin-right: 2px;
+
+    }
+
+    .clothId {
+        /* margin: 12px 0px; */
+        /* padding: 12px 0px; */
+        font-size: 10px;
+        margin: 0;
+        padding: 0;
+        margin-top: 20px;
+        width: 100%;
+
+    }
+
+    .brand,
+    .file {
+        display: flex;
+        flex-direction: column;
+        font-size: 14px;
+        padding: 5px;
+    }
+
+    .brandId {
+
+        margin: 0;
+        margin-top: 15px;
+        width: 60%;
+        font-size: 10px;
+        padding: 0;
+        /* width: 100%; */
+
+    }
+}

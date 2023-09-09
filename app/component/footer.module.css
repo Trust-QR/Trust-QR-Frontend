@@ -1,0 +1,155 @@
+.footer {
+    flex: 1;
+    background-color: black;
+    color: white;
+    text-align: center;
+
+}
+
+.heading {
+    margin: 10px;
+
+}
+
+.heading h1 {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.content p {
+    font-size: 16px;
+}
+
+.github {
+    margin: 15px;
+}
+
+
+
+/* 
+ @media only screen and (min-width: 949px) and (max-width: 1024px) {
+   .heading{
+     margin: 10px;
+     
+   }
+   .heading h1 {
+       font-family: 'Times New Roman', Times, serif;
+       font-size: 22px;
+       font-weight: 700;
+   }
+   .content p{
+     font-size: 16px;
+   }
+   .github{
+    margin: 15px;
+   }
+   
+ } */
+
+/* @media only screen and (min-width: 799px) and (max-width: 948px) {
+   .heading{
+     margin: 10px;
+     
+   }
+   .heading h1 {
+       font-family: 'Times New Roman', Times, serif;
+       font-size: 22px;
+       font-weight: 700;
+   }
+   .content p{
+     font-size: 16px;
+   }
+   .github{
+    margin: 15px;
+   }
+   
+ } */
+/* @media only screen and (min-width: 569px) and (max-width: 798px) {
+   .heading{
+   margin: 10px;
+   
+ }
+ .heading h1 {
+     font-family: 'Times New Roman', Times, serif;
+     font-size: 22px;
+     font-weight: 700;
+ }
+ .content p{
+   font-size: 16px;
+ }
+ .github{
+  margin: 15px;
+ }
+ 
+ } */
+
+
+@media only screen and (min-width: 300px) and (max-width: 568px) {
+    .heading {
+        margin: 10px;
+
+    }
+
+    .heading h1 {
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 18px;
+        font-weight: 700;
+    }
+
+    .content p {
+        font-size: 14px;
+    }
+
+    .github {
+        margin: 15px;
+    }
+
+}
+
+
+
+@media only screen and (min-width: 230px) and (max-width: 299px) {
+    .heading {
+        margin: 10px;
+
+    }
+
+    .heading h1 {
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 18px;
+        font-weight: 700;
+    }
+
+    .content p {
+        font-size: 14px;
+    }
+
+    .github {
+        margin: 15px;
+    }
+
+}
+
+
+@media only screen and (min-width: 100px) and (max-width: 229px) {
+    .heading {
+        margin: 10px;
+
+    }
+
+    .heading h1 {
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 18px;
+        font-weight: 700;
+    }
+
+    .content p {
+        font-size: 14px;
+    }
+
+    .github {
+        margin: 15px;
+    }
+
+}

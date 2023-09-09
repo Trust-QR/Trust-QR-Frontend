@@ -1,0 +1,1180 @@
+.main_container {
+    padding: 40px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: snow;
+    padding-bottom: 80px;
+}
+
+.main_container h2 {
+    text-align: center;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 2px;
+}
+
+.wrapperDiv {
+    padding: 40px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 18px;
+    background-image: linear-gradient(37deg, pink, red 50%, green 20%, blue 100%);
+}
+
+.Smain_container label {
+    padding: 20px;
+    font-size: 24px;
+    line-height: 50px;
+    font-weight: 800;
+
+}
+
+
+
+
+.form {
+    display: flex;
+    flex-direction: column;
+    /* background-color: darkgoldenrod; */
+    background-image: linear-gradient(37deg, rgb(170, 150, 240), rgb(213, 239, 120) 50%, rgb(201, 126, 188) 20%, rgb(94, 215, 94) 100%);
+    padding: 20px;
+    gap: 30px;
+    align-items: center;
+    justify-content: space-between;
+    justify-items: center;
+    border: 1px solid #FFF;
+    border-radius: 10px;
+    width: 560px;
+}
+
+.gender {
+    display: flex;
+}
+
+.rButtons label {
+    font-size: 18px;
+    font-weight: 500;
+    padding-bottom: 5px;
+}
+
+.rButtons {
+    padding-top: 28px;
+}
+
+.Rinp {
+    width: 21px;
+    height: 21px;
+}
+
+.name input,
+.email input {
+    width: 315px;
+    height: 50px;
+    border: 1px solid pink;
+    border-radius: 10px;
+
+}
+
+.Smain_container input {
+    padding: 0px 15px;
+}
+
+.number input {
+    width: 164px;
+    height: 35px;
+    border: 0px solid #FFF;
+    border-radius: 10px;
+    padding: 0px 10px;
+}
+
+.passwords input {
+    padding: 0px 10px;
+    width: 280px;
+    height: 50px;
+    border: 0px solid #FFF;
+    border-radius: 10px;
+}
+
+.form_container {
+    display: flex;
+    flex-direction: column;
+    row-gap: 14px;
+}
+
+
+.passwords {
+    justify-content: space-between;
+}
+
+.password {
+    justify-content: space-between;
+}
+
+.password input {
+    padding: 0px 10px;
+    width: 316px;
+    height: 50px;
+    border: 0px solid #FFF;
+    border-radius: 10px;
+}
+
+
+.form_container input[type="submit"] {
+    font-size: 20px;
+    font-weight: 600;
+    margin: 40px 0px 0px 135px;
+    width: 230px;
+    height: 55px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    border: 0px solid #FFF;
+    border-radius: 20px;
+}
+
+.form_container div input[type="submit"] {
+    font-size: 20px;
+    font-weight: 600;
+    margin: 40px 0px 0px 60px;
+    width: 230px;
+    height: 55px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    border: 0px solid #FFF;
+    border-radius: 20px;
+}
+
+.smbtn:hover {
+    cursor: pointer;
+    color: #FFF;
+    background-color: tan;
+}
+
+.authBtn a {
+    display: flex;
+    color: lightpink;
+    text-decoration: none;
+    text-align: center;
+    justify-content: center;
+    width: 154px;
+    height: 55px;
+    font-size: 30px;
+    font-weight: 400;
+    border: 1px solid blue;
+    background-color: darkslategrey;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.authDiv a {
+    text-decoration: none;
+    font-size: 20px;
+    outline: none;
+    color: rgb(90, 139, 133);
+    font-weight: 600;
+}
+
+.forgot {
+    text-align: center;
+    cursor: pointer;
+}
+
+
+@media only screen and (max-width:911.2px) {
+    .main_container {
+        padding-top: 7.6rem;
+    }
+}
+
+@media only screen and (min-width: 569px) and (max-width: 789.2px) {
+    .main_container {
+        padding: 20px;
+        padding-bottom: 80px;
+        padding-top: 7.6rem;
+    }
+
+
+    .wrapperDiv {
+        padding: 30px 0px;
+        gap: 17px;
+    }
+
+    .form {
+        padding: 30px 0px;
+        gap: 30px;
+        width: 499px;
+    }
+
+
+    .authBtn a {
+        width: 130px;
+        height: 30px;
+        font-size: 28px;
+        padding: 8px;
+    }
+}
+
+@media only screen and (min-width: 458px) and (max-width: 568px) {
+
+    .main_container {
+        width: 100%;
+        padding: 20px;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: #ffbea0;
+        padding-bottom: 80px;
+        padding-top: 7.6rem;
+    }
+
+    .main_container h2 {
+        font-size: 20px;
+        text-align: center;
+        font-weight: 800;
+        line-height: 20px;
+        letter-spacing: 2px;
+    }
+
+    .wrapperDiv {
+        padding: 30px 0px;
+        gap: 17px;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: lime;
+        /* width: 388px; */
+        width: 95vw;
+    }
+
+    .Smain_container label {
+        /* padding: 0px 5px; */
+        font-size: 20px;
+        line-height: 50px;
+        font-weight: 800;
+
+    }
+
+    .form {
+        display: flex;
+        flex-direction: column;
+        background-color: darkgoldenrod;
+        padding: 30px 0px;
+        gap: 30px;
+        /* width: 357px; */
+        width: 90vw;
+        align-items: center;
+        justify-content: space-between;
+        justify-items: center;
+        border: 1px solid #FFF;
+        border-radius: 10px;
+        /* width: 100%; */
+    }
+
+    .gender {
+        display: flex;
+    }
+
+    .rButtons label {
+        font-size: 18px;
+        font-weight: 500;
+        padding-bottom: 5px;
+        padding-left: 8px;
+    }
+
+    .rButtons {
+        padding-top: 24px;
+    }
+
+    .Rinp {
+        width: 16px;
+        height: 16px;
+    }
+
+    .name input,
+    .email input {
+        width: 256px;
+        height: 50px;
+        border: 1px solid pink;
+        border-radius: 10px;
+
+    }
+
+    .Smain_container input {
+        padding: 0px 10px;
+    }
+
+    .number input {
+        width: 164px;
+        height: 35px;
+        border: 0px solid #FFF;
+        border-radius: 10px;
+        padding: 0px 10px;
+    }
+
+
+    .passwords input {
+        padding: 0px 10px;
+        width: 220px;
+        height: 42px;
+        border: 0px solid #FFF;
+        border-radius: 10px;
+    }
+
+    .form_container {
+        display: flex;
+        flex-direction: column;
+        row-gap: 14px;
+    }
+
+
+    .passwords,
+    .password {
+        justify-content: space-between;
+    }
+
+    /* For Login page */
+    .password input {
+        padding: 0px 10px;
+        width: 324px;
+        height: 42px;
+        border: 0px solid #FFF;
+        border-radius: 10px;
+    }
+
+
+    .form_container input[type="submit"] {
+        font-size: 20px;
+        font-weight: 600;
+        margin: 40px 0px 0px 90px;
+        width: 230px;
+        height: 55px;
+        border-radius: 20px;
+    }
+
+    /* For Login page */
+    .form_container div input[type="submit"] {
+        font-size: 20px;
+        font-weight: 600;
+        margin: 40px 0px 0px 60px;
+        width: 230px;
+        height: 55px;
+        border-radius: 20px;
+    }
+
+    .authBtn a {
+        width: 130px;
+        height: 30px;
+        font-size: 28px;
+        padding: 8px;
+        font-weight: 400;
+    }
+}
+
+@media only screen and (min-width: 332px) and (max-width: 457.6px) {
+
+    .main_container {
+        width: 100%;
+        padding: 20px;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: #ffbea0;
+        padding-bottom: 80px;
+        padding-top: 7.6rem;
+    }
+
+    .main_container h2 {
+        font-size: 18px;
+        text-align: center;
+        font-weight: 800;
+        line-height: 20px;
+        letter-spacing: 2px;
+    }
+
+    .wrapperDiv {
+        padding: 30px 0px;
+        gap: 17px;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: lime;
+        width: 98vw;
+    }
+
+    .Smain_container label {
+        padding: 10px;
+        font-size: 16px;
+        line-height: 50px;
+        font-weight: 800;
+
+    }
+
+    .form {
+        display: flex;
+        flex-direction: column;
+        background-color: darkgoldenrod;
+        padding: 30px 0px;
+        gap: 30px;
+        /* width: 357px; */
+        width: 94vw;
+        align-items: center;
+        justify-content: space-between;
+        justify-items: center;
+        border: 1px solid #FFF;
+        border-radius: 10px;
+        /* width: 100%; */
+    }
+
+    .gender {
+        display: flex;
+    }
+
+    .rButtons label {
+        font-size: 16px;
+        font-weight: 500;
+        padding: 5px;
+    }
+
+    .rButtons {
+        padding-top: 15px;
+    }
+
+    .Rinp {
+        width: 16px;
+        height: 16px;
+    }
+
+    .name input,
+    .email input {
+        width: 198px;
+        height: 50px;
+        border: 1px solid pink;
+        border-radius: 10px;
+
+    }
+
+    .Smain_container input {
+        padding: 0px 10px;
+    }
+
+    .number input {
+        width: 135px;
+        height: 35px;
+        border: 0px solid #FFF;
+        border-radius: 10px;
+        padding: 0px 10px;
+    }
+
+
+    .passwords input {
+        padding: 0px 10px;
+        width: 175px;
+        height: 42px;
+        border: 0px solid #FFF;
+        border-radius: 10px;
+    }
+
+    .form_container {
+        display: flex;
+        flex-direction: column;
+        row-gap: 14px;
+    }
+
+
+    .passwords,
+    .password {
+        justify-content: space-between;
+    }
+
+    /* For Login page */
+
+    .password input {
+        padding: 0px 10px;
+        width: 243px;
+        height: 42px;
+        border: 0px solid #FFF;
+        border-radius: 10px;
+    }
+
+
+    .form_container input[type="submit"] {
+        font-size: 20px;
+        font-weight: 600;
+        margin: 40px 0px 0px 40px;
+        width: 230px;
+        height: 55px;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        border: 0px solid #FFF;
+        border-radius: 20px;
+    }
+
+    /* For Login page */
+
+    .form_container div input[type="submit"] {
+        font-size: 20px;
+        font-weight: 600;
+        margin: 40px 0px 0px 18px;
+        width: 230px;
+        height: 55px;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        border: 0px solid #FFF;
+        border-radius: 20px;
+    }
+
+    .smbtn:hover {
+        cursor: pointer;
+        color: #FFF;
+        background-color: tan;
+    }
+
+    .authBtn a {
+        display: flex;
+        width: 130px;
+        height: 30px;
+        font-size: 28px;
+        padding: 8px;
+        font-weight: 400;
+        border-radius: 10px;
+        text-decoration: none;
+        text-align: center;
+        justify-content: center;
+        color: lightpink;
+        border: 1px solid blue;
+        background-color: darkslategrey;
+
+    }
+
+    .authDiv a {
+        text-decoration: none;
+        font-size: 20px;
+        outline: none;
+        color: rgb(90, 139, 133);
+    }
+
+    .forgot {
+        text-align: center;
+        cursor: pointer;
+    }
+}
+
+@media only screen and (min-width: 240px) and (max-width: 331.2px) {
+
+    .main_container {
+        width: 100%;
+        padding: 20px;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: #ffbea0;
+        padding-bottom: 80px;
+        padding-top: 5.6rem;
+    }
+
+    .main_container h2 {
+        font-size: 18px;
+        text-align: center;
+        font-weight: 800;
+        line-height: 20px;
+        letter-spacing: 2px;
+    }
+
+    .wrapperDiv {
+        padding: 30px 0px;
+        gap: 17px;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: lime;
+        width: 98vw;
+    }
+
+    .Smain_container label {
+        padding: 5px;
+        font-size: 16px;
+        line-height: 50px;
+        font-weight: 800;
+
+    }
+
+    .form {
+        display: flex;
+        flex-direction: column;
+        background-color: darkgoldenrod;
+        padding: 30px 0px;
+        gap: 30px;
+        width: 94vw;
+        align-items: center;
+        justify-content: space-between;
+        justify-items: center;
+        border: 1px solid #FFF;
+        border-radius: 10px;
+    }
+
+    .gender {
+        display: flex;
+        flex-direction: column;
+        column-gap: 2px;
+    }
+
+    .rButtons label {
+        font-size: 16px;
+        font-weight: 500;
+        padding: 5px;
+    }
+
+    .rButtons {
+        padding-left: 5px;
+        margin-top: -50px;
+    }
+
+    .Rinp {
+
+        width: 14px;
+        height: 14px;
+    }
+
+    .name input,
+    .email input {
+        width: 58vw;
+        height: 50px;
+        border: 1px solid pink;
+        border-radius: 10px;
+
+    }
+
+    .Smain_container input {
+        padding: 0px 5px;
+    }
+
+    .number input {
+        width: 29vw;
+        height: 35px;
+        border: 0px solid #FFF;
+        border-radius: 10px;
+        padding: 0px 5px;
+    }
+
+
+    .passwords input {
+        padding: 0px 5px;
+        width: 46vw;
+        height: 42px;
+        border: 0px solid #FFF;
+        border-radius: 10px;
+    }
+
+    .form_container {
+        display: flex;
+        flex-direction: column;
+        row-gap: 14px;
+    }
+
+
+    .passwords,
+    .password {
+        justify-content: space-between;
+    }
+
+    /* For Login page */
+
+    .password input {
+        padding: 0px 10px;
+        width: 70vw;
+        height: 42px;
+        border: 0px solid #FFF;
+        border-radius: 10px;
+    }
+
+
+    .form_container input[type="submit"] {
+        font-size: 20px;
+        font-weight: 600;
+        margin: 14vw 0vw 0vw 10vw;
+        width: 65vw;
+        height: 47px;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        border: 0px solid #FFF;
+        border-radius: 20px;
+    }
+
+    /* For Login page */
+
+    .form_container div input[type="submit"] {
+        font-size: 20px;
+        font-weight: 600;
+        margin: 14vw 0vw 0vw 5vw;
+        width: 65vw;
+        height: 55px;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        border: 0px solid #FFF;
+        border-radius: 20px;
+    }
+
+    .smbtn:hover {
+        cursor: pointer;
+        color: #FFF;
+        background-color: tan;
+    }
+
+    .authBtn a {
+        display: flex;
+        width: 130px;
+        height: 30px;
+        font-size: 28px;
+        padding: 8px;
+        font-weight: 400;
+        border-radius: 10px;
+        text-decoration: none;
+        text-align: center;
+        justify-content: center;
+        color: lightpink;
+        border: 1px solid blue;
+        background-color: darkslategrey;
+
+    }
+
+    .authDiv a {
+        text-decoration: none;
+        font-size: 20px;
+        outline: none;
+        color: rgb(90, 139, 133);
+    }
+
+    .authDiv div {
+        padding-left: 10px;
+    }
+
+    .forgot {
+        text-align: center;
+        cursor: pointer;
+    }
+}
+
+@media only screen and (min-width: 153px) and (max-width: 239.2px) {
+
+    .main_container {
+        width: 100%;
+        padding: 20px;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: #ffbea0;
+        padding-bottom: 80px;
+        padding-top: 5.6rem;
+    }
+
+    .main_container h2 {
+        font-size: 18px;
+        text-align: center;
+        font-weight: 800;
+        line-height: 20px;
+        letter-spacing: 2px;
+    }
+
+    .wrapperDiv {
+        padding: 30px 0px;
+        gap: 17px;
+        background-color: lime;
+        width: 98vw;
+    }
+
+    .Smain_container label {
+        padding: 5px;
+        font-size: 16px;
+        line-height: 50px;
+        font-weight: 800;
+
+    }
+
+    .form {
+        display: flex;
+        flex-direction: column;
+        background-color: darkgoldenrod;
+        padding: 30px 0px;
+        gap: 30px;
+        width: 94vw;
+        border: 1px solid #FFF;
+        border-radius: 10px;
+    }
+
+    .gender {
+        display: flex;
+        flex-direction: column;
+        column-gap: 2px;
+    }
+
+    .rButtons label {
+        font-size: 16px;
+        font-weight: 500;
+        padding: 5px;
+    }
+
+    .rButtons {
+        padding-left: 5px;
+        margin-top: -50px;
+    }
+
+    .Rinp {
+
+        width: 14px;
+        height: 14px;
+    }
+
+    .name,
+    .email {
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .name input,
+    .email input {
+        width: 80vw;
+        height: 50px;
+        border: 1px solid pink;
+        border-radius: 10px;
+        margin-left: 5px;
+
+    }
+
+    .Smain_container input {
+        padding: 0px 5px;
+    }
+
+    .number {
+        display: flex;
+        flex-direction: column;
+        box-sizing: border-box;
+    }
+
+    .number input {
+        width: 80vw;
+        height: 35px;
+        border: 0px solid #FFF;
+        border-radius: 10px;
+        padding: 0px 5px;
+        margin-left: 5px;
+    }
+
+    .password,
+    .passwords {
+        display: flex;
+        flex-direction: column;
+        box-sizing: border-box;
+    }
+
+    .passwords input {
+        padding: 0px 5px;
+        width: 80vw;
+        height: 42px;
+        border: 0px solid #FFF;
+        border-radius: 10px;
+        margin-left: 5px;
+    }
+
+    .form_container {
+        display: flex;
+        flex-direction: column;
+        row-gap: 0px;
+    }
+
+    .passwords,
+    .password {
+        justify-content: space-between;
+    }
+
+    /* For Login page */
+
+    .password input {
+        padding: 0px 5px;
+        width: 81vw;
+        height: 42px;
+        border: 0px solid #FFF;
+        border-radius: 10px;
+        margin-left: 5px;
+        margin-top: 10px;
+    }
+
+
+    .form_container input[type="submit"] {
+        font-size: 20px;
+        font-weight: 600;
+        margin: 14vw 0vw 0vw 10vw;
+        width: 200px;
+        width: 65vw;
+        height: 47px;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        border: 0px solid #FFF;
+        border-radius: 20px;
+    }
+
+    /* For Login page */
+
+    .form_container div input[type="submit"] {
+        font-size: 20px;
+        font-weight: 600;
+        margin: 14vw 0vw 0vw 9vw;
+        width: 65vw;
+        height: 47px;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        border: 0px solid #FFF;
+        border-radius: 20px;
+    }
+
+    .authBtn a {
+        display: flex;
+        width: 112px;
+        height: 27px;
+        font-size: 26px;
+        padding: 5px;
+        font-weight: 400;
+        border-radius: 10px;
+    }
+
+    .authDiv a {
+        text-decoration: none;
+        font-size: 20px;
+        outline: none;
+        color: rgb(90, 139, 133);
+    }
+
+    .authDiv div {
+        padding-left: 10px;
+    }
+
+    .forgot {
+        text-align: center;
+        cursor: pointer;
+        padding-top: 20px;
+    }
+}
+
+@media only screen and (max-width: 152.2px) {
+
+    .main_container {
+        width: 100%;
+        padding: 20px;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: #ffbea0;
+        padding-bottom: 80px;
+        padding-top: 5.6rem;
+    }
+
+    .main_container h2 {
+        font-size: 15px;
+        text-align: center;
+        font-weight: 800;
+        line-height: 18px;
+        letter-spacing: 1px;
+    }
+
+    .wrapperDiv {
+        padding: 30px 0px;
+        gap: 17px;
+        background-color: lime;
+        width: 98vw;
+    }
+
+    .Smain_container label {
+        padding: 5px;
+        font-size: 15px;
+        line-height: 50px;
+        font-weight: 800;
+
+    }
+
+    .form {
+        display: flex;
+        flex-direction: column;
+        background-color: darkgoldenrod;
+        padding: 30px 0px;
+        gap: 30px;
+        width: 94vw;
+        border: 1px solid #FFF;
+        border-radius: 10px;
+    }
+
+    .gender {
+        display: flex;
+        flex-direction: column;
+        column-gap: 2px;
+    }
+
+    .rButtons label {
+        font-size: 16px;
+        font-weight: 500;
+        padding: 5px;
+    }
+
+    .rButtons {
+        /* display: flex;
+        flex-direction: column; */
+        padding-left: 5px;
+        margin-top: -50px;
+    }
+
+    .Rinp {
+
+        width: 24px;
+        height: 15px;
+    }
+
+    .name,
+    .email {
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .name input,
+    .email input {
+        width: 74vw;
+        height: 40px;
+        border: 1px solid pink;
+        border-radius: 10px;
+        margin-left: 5px;
+
+    }
+
+    .Smain_container input {
+        padding: 0px 5px;
+    }
+
+    .number {
+        display: flex;
+        flex-direction: column;
+        box-sizing: border-box;
+    }
+
+    .number input {
+        width: 75vw;
+        height: 35px;
+        border: 0px solid #FFF;
+        border-radius: 10px;
+        padding: 0px 5px;
+        margin-left: 5px;
+    }
+
+    .password,
+    .passwords {
+        display: flex;
+        flex-direction: column;
+        box-sizing: border-box;
+    }
+
+    .passwords input {
+        padding: 0px 5px;
+        width: 75vw;
+        height: 40px;
+        border: 0px solid #FFF;
+        border-radius: 10px;
+        margin-left: 5px;
+    }
+
+    .form_container {
+        display: flex;
+        flex-direction: column;
+        row-gap: 0px;
+    }
+
+    .passwords,
+    .password {
+        justify-content: space-between;
+    }
+
+    /* For Login page */
+
+    .password input {
+        padding: 0px 5px;
+        width: 75vw;
+        height: 40px;
+        border: 0px solid #FFF;
+        border-radius: 10px;
+        margin-left: 5px;
+        margin-top: 10px;
+    }
+
+
+    .form_container input[type="submit"] {
+        font-size: 16px;
+        font-weight: 600;
+        margin: 14vw 0vw 0vw 7vw;
+        width: 79vw;
+        height: 40px;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        border: 0px solid #FFF;
+        border-radius: 20px;
+    }
+
+    /* For Login page */
+
+
+    .form_container div input[type="submit"] {
+        font-size: 20px;
+        font-weight: 600;
+        margin: 14vw 0vw 0vw 9vw;
+        width: 75vw;
+        height: 40px;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        border: 0px solid #FFF;
+        border-radius: 20px;
+    }
+
+    .authBtn a {
+        display: flex;
+        width: 71px;
+        height: 21px;
+        font-size: 18px;
+        padding: 5px;
+        font-weight: 400;
+        border-radius: 10px;
+    }
+
+    .authDiv a {
+        text-decoration: none;
+        font-size: 20px;
+        outline: none;
+        color: rgb(90, 139, 133);
+    }
+
+    .authDiv div {
+        padding-left: 10px;
+    }
+
+    .forgot {
+        text-align: center;
+        cursor: pointer;
+        padding-top: 20px;
+    }
+}
