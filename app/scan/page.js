@@ -2,10 +2,10 @@
 import { useState, useEffect } from 'react';
 import { useRouter } from 'next/navigation';
 import styles from './scan.module.css';
+import { get_api_url } from '../utils';
 
 export default function Upload() {
-    const token = process.env["token"];
-    const url = process.env["url"];
+    const url = get_api_url();
 
     const [formKey, setFormKey] = useState(0);
     const [results, setResults] = useState(null);
@@ -23,7 +23,7 @@ export default function Upload() {
             method: 'POST',
             headers: {
                 'Accept': 'application/json',
-                'Authorization': `Bearer ${token}`
+                // 'Authorization': `Bearer ${token}`
             },
             body: data,
         };
@@ -38,7 +38,7 @@ export default function Upload() {
             // console.log('+++++++++++++++++++-Result--------------')
             // console.log(result)
             // ScrollChange = 1;
-            if(result['url'] == false || result['url'] == 'No selected file') {
+            if (result['url'] == false || result['url'] == 'No selected file') {
                 alert('Please Select Correct file');
             }
             router.push(result['url']);
@@ -57,11 +57,11 @@ export default function Upload() {
         <>
             <div className={styles.html_form}>
                 <div className={styles.heading}>
-                    <h1>Upload / Scan QR Code</h1></div>
+                    <h1>Upload QR</h1></div>
                 <form action="#" method="post" onSubmit={submitHandler} className={styles.innerform} key={formKey}>
                     <div className={styles.per_info}>
                         <div className={styles.cloth}>
-                            <label htmlFor="Upload photo" className={styles.file}>Scan QR
+                            <label htmlFor="Upload photo" className={styles.file}>Upload
                                 <input type="file" id="prod_qr" name="prod_qr" className={styles.clothId} required accept='image/*' />
                             </label>
                         </div>

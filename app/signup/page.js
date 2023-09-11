@@ -1,8 +1,10 @@
 "use client";
-import { useState } from "react";
+import { useState ,useContext} from "react";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 import styles from "./signup.module.css";
+import { get_api_url } from '../utils'
+import {loginContext} from '../layout'
 
 function passwordVal(password) {
   const minL = 8;
@@ -18,11 +20,11 @@ function emailVal(email) {
 }
 
 export default function Signup() {
-  const token = process.env["token"];
-  const url = process.env["url"];
+  const url = get_api_url();
   const [result, setResults] = useState(null);
   const [formKey, setFormKey] = useState(0);
   const router = useRouter();
+  const signup = useContext(loginContext);
 
   console.log("Printing URL : ", url);
 
@@ -63,7 +65,7 @@ export default function Signup() {
       headers: {
         "Content-Type": "application/json",
         Accept: "application/json",
-        Authorization: `Bearer ${token}`,
+        // Authorization: `Bearer ${token}`,
       },
       body: JSON.stringify(postData),
     };
@@ -78,7 +80,8 @@ export default function Signup() {
         window.alert("Something Went wrong");
       } else if (result['id'] != 'User already exist') {
         event.target.reset();
-        window.sessionStorage.setItem("Identifier", result["id"]);
+        const id = result["id"];
+        signup(id)
         router.push("/dashboard");
         window.alert("Successfully Registered");
       }
@@ -112,7 +115,7 @@ export default function Signup() {
             >
               <div className={styles.form_container}>
                 <div className={styles.email}>
-                  <label htmlFor="email">Email : </label>
+                  <label htmlFor="email">Email </label>
                   <input
                     type="email"
                     name="email"
@@ -122,32 +125,31 @@ export default function Signup() {
                     min={5}
                   />
                 </div>
-
-                <div className={styles.passwords}>
-                  <label htmlFor="password" required>
-                    Password :{" "}
-                  </label>
-                  <input
-                    type="password"
-                    name="password1"
-                    id="password1"
-                    placeholder="Create Password"
-                    required
-                  />
-                  <br />
-                  <label htmlFor="password" required>
-                    Password :{" "}
-                  </label>
-                  <input
-                    type="password"
-                    name="password2"
-                    id="password2"
-                    required
-                    placeholder="Confirm Password"
-                  />
-                </div>
-                <div className={styles.authDiv}>
-                  <div >Carefully Enter your password. It will not be forgotten</div>
+                <div>
+                  <div className={styles.password1}>
+                    <label htmlFor="password" required>
+                      Password 
+                    </label>
+                    <input
+                      type="password"
+                      name="password1"
+                      id="password1"
+                      placeholder="Create Password"
+                      required
+                    />
+                  </div>
+                  <div className={styles.password2}>
+                    <label htmlFor="password" required>
+                      Confirm Password 
+                    </label>
+                    <input
+                      type="password"
+                      name="password2"
+                      id="password2"
+                      required
+                      placeholder="Confirm Password"
+                    />
+                  </div>
                 </div>
                 <input
                   type="submit"

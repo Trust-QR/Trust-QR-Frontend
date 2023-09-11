@@ -27,7 +27,7 @@
     background-color: lightslategrey;
     border: 2px solid white;
     border-radius: 40px;
-    width: 85%;
+    width: 70%;
 }
 
 .Smain_container label {
@@ -35,7 +35,6 @@
     font-size: 24px;
     line-height: 50px;
     font-weight: 800;
-    /* width: 100%; */
 
 }
 
@@ -47,15 +46,20 @@
     align-items: center;
     justify-content: space-between;
     justify-items: center;
-    /* width: 100%; */
+}
+
+.lsmbtn {
+    display: flex;
 }
 
 .email input {
-    width: 280px;
-    height: 50px;
+    width: 330px;
+    height: 76px;
     border: 1px solid pink;
     border-radius: 10px;
-    margin-left: 185px;
+    margin-left: 0px;
+    align-items: center;
+    align-self: center;
 
 }
 
@@ -64,35 +68,25 @@
 }
 
 
-.password1 input {
+.password input {
     padding: 0px 10px;
-    width: 280px;
-    height: 50px;
+    width: 330px;
+    height: 76px;
     border: 0px solid #FFF;
     border-radius: 10px;
-    margin-left: 134px;
+    margin-left: 0px;
     margin-bottom: 14px;
 }
 
-.password2 input {
-    padding: 0px 10px;
-    width: 280px;
-    height: 50px;
-    border: 0px solid #FFF;
-    border-radius: 10px;
-    margin-left: 34px;
-    margin-bottom: 14px;
-}
 
 .form_container {
     display: flex;
     flex-direction: column;
-    row-gap: 14px;
+    row-gap: 40px;
 }
 
 
-.password1,
-.password2 {
+.password {
     justify-content: space-between;
 }
 
@@ -100,14 +94,15 @@
 .form_container input[type="submit"] {
     font-size: 20px;
     font-weight: 600;
-    margin: 40px 0px 0px 135px;
-    width: 230px;
-    height: 55px;
+    margin: 0px;
+    width: 330px;
+    height: 60px;
     text-align: center;
     align-items: center;
     justify-content: center;
     border: 0px solid #FFF;
     border-radius: 20px;
+
 }
 
 .smbtn:hover {
@@ -143,6 +138,147 @@
 
 
 @media only screen and (max-width:911.2px) {
+
+    .main_container {
+        padding: 40px;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: snow;
+        padding-bottom: 80px;
+        color: white;
+    }
+
+
+    .main_container h2 {
+        text-align: center;
+        font-weight: 400;
+        line-height: 20px;
+        letter-spacing: 2px;
+        line-height: 1.5;
+    }
+
+    .wrapperDiv {
+        padding: 40px;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 18px;
+        background-color: lightslategrey;
+        border: 2px solid white;
+        border-radius: 40px;
+        width: 70%;
+    }
+
+    .Smain_container label {
+        padding: 20px;
+        font-size: 24px;
+        line-height: 50px;
+        font-weight: 800;
+
+    }
+
+    .form {
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+        gap: 30px;
+        align-items: center;
+        justify-content: space-between;
+        justify-items: center;
+    }
+
+    .lsmbtn {
+        display: flex;
+    }
+
+    .email input {
+        width: 330px;
+        height: 76px;
+        border: 1px solid pink;
+        border-radius: 10px;
+        margin-left: 0px;
+        align-items: center;
+        align-self: center;
+
+    }
+
+    .Smain_container input {
+        padding: 0px 15px;
+    }
+
+
+    .password input {
+        padding: 0px 10px;
+        width: 330px;
+        height: 76px;
+        border: 0px solid #FFF;
+        border-radius: 10px;
+        margin-left: 0px;
+        margin-bottom: 14px;
+    }
+
+
+    .form_container {
+        display: flex;
+        flex-direction: column;
+        row-gap: 40px;
+    }
+
+
+    .password {
+        justify-content: space-between;
+    }
+
+
+    .form_container input[type="submit"] {
+        font-size: 20px;
+        font-weight: 600;
+        margin: 0px;
+        width: 330px;
+        height: 60px;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        border: 0px solid #FFF;
+        border-radius: 20px;
+
+    }
+
+    .smbtn:hover {
+        cursor: pointer;
+        color: #FFF;
+        background-color: tan;
+    }
+
+    .authBtn a {
+        display: flex;
+        color: #FFF;
+        text-decoration: none;
+        text-align: center;
+        justify-content: center;
+        width: 154px;
+        height: 55px;
+        font-size: 30px;
+        font-weight: 400;
+        border: 1px solid rgb(114, 114, 167);
+        background-color: rgb(86, 94, 94);
+        border-radius: 10px;
+        padding: 10px;
+    }
+
+    .authDiv a {
+        text-decoration: none;
+        font-size: 20px;
+        outline: none;
+        color: rgb(255, 255, 255);
+        font-weight: 600;
+    }
+
+
+
     .main_container {
         padding-top: 7.6rem;
     }
@@ -159,6 +295,7 @@
     .wrapperDiv {
         padding: 30px 0px;
         gap: 17px;
+        width: 85%;
     }
 
     .form {
@@ -166,47 +303,27 @@
         gap: 30px;
     }
 
-    .form_container {
-        width: 480px;
-    }
-
     .email {
         display: flex;
         flex-direction: column;
     }
 
-    .email label {
-        align-items: baseline;
-        padding-left: 35px;
-    }
 
     .email input {
         text-align: center;
         align-items: center;
-        margin-left: 35px;
+        margin-left: 0px;
 
     }
 
-    .password1 {
+    .password {
         display: flex;
         flex-direction: column;
     }
 
-    .password2 {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .password2 label,
-    .password1 label {
-        align-items: baseline;
-        padding-left: 35px;
-    }
-
-    .password1 input,
-    .password2 input {
+    .password input {
         text-align: center;
-        margin-left: 35px;
+        margin-left: 0px;
     }
 
     .authBtn a {
@@ -217,7 +334,7 @@
     }
 
     .smbtn {
-        margin: 40px 0px 0px 117px;
+        margin: 0px;
     }
 
 
@@ -245,47 +362,27 @@
         gap: 30px;
     }
 
-    .form_container {
-        width: 480px;
-    }
-
     .email {
         display: flex;
         flex-direction: column;
     }
 
-    .email label {
-        align-items: baseline;
-        padding-left: 42px;
-    }
-
     .email input {
         text-align: center;
         align-items: center;
-        margin-left: 42px;
+        /* margin-left: 0px; */
 
     }
 
-    .password1 {
+    .password {
         display: flex;
         flex-direction: column;
     }
 
-    .password2 {
-        display: flex;
-        flex-direction: column;
-    }
 
-    .password2 label,
-    .password1 label {
-        align-items: baseline;
-        padding-left: 42px;
-    }
-
-    .password1 input,
-    .password2 input {
+    .password input {
         text-align: center;
-        margin-left: 42px;
+        /* margin-left: 42px; */
     }
 
     .authBtn a {
@@ -296,7 +393,7 @@
     }
 
     .form_container input[type="submit"] {
-        margin: 40px 0px 0px 128px;
+        margin: 0px;
     }
 }
 
@@ -327,51 +424,29 @@
 
     }
 
-    .form_container {
-        width: 480px;
-        margin-left: 0;
-        padding-left: 0;
-        margin-right: 0;
-        padding-right: 0;
-    }
 
     .email {
         display: flex;
         flex-direction: column;
     }
 
-    .email label {
-        align-items: baseline;
-        padding-left: 95px;
-    }
-
     .email input {
         text-align: center;
         align-items: center;
-        margin-left: 95px;
-
+        width: 295px;
+        height: 90px;
     }
 
-    .password1 {
+    .password {
         display: flex;
         flex-direction: column;
     }
 
-    .password2 {
-        display: flex;
-        flex-direction: column;
-    }
 
-    .password2 label,
-    .password1 label {
-        align-items: baseline;
-        padding-left: 95px;
-    }
-
-    .password1 input,
-    .password2 input {
+    .password input {
         text-align: center;
-        margin-left: 95px;
+        width: 295px;
+        height: 90px;
     }
 
     .authBtn a {
@@ -382,7 +457,9 @@
     }
 
     .form_container input[type="submit"] {
-        margin: 40px 0px 0px 128px;
+        margin: 0px;
+        width: 295px;
+        height: 65px;
     }
 }
 
@@ -408,9 +485,6 @@
         width: 95%;
     }
 
-    .wrapperDiv h2 {
-        line-height: 1.5;
-    }
 
     .form {
         padding: 30px 0px;
@@ -418,55 +492,28 @@
 
     }
 
-    .form_container {
-        width: 240px;
-        margin-left: 0;
-        padding-left: 0;
-        margin-right: 0;
-        padding-right: 0;
-    }
-
     .email {
         display: flex;
         flex-direction: column;
     }
 
-    .email label {
-        align-items: baseline;
-        padding-left: 22px;
-        font-size: 20px;
-    }
-
     .email input {
         text-align: center;
         align-items: center;
-        margin-left: 22px;
         width: 200px;
         height: 88px;
 
     }
 
-    .password1 {
+    .password {
         display: flex;
         flex-direction: column;
     }
 
-    .password2 {
-        display: flex;
-        flex-direction: column;
-    }
 
-    .password2 label,
-    .password1 label {
-        align-items: baseline;
-        padding-left: 22px;
-        font-size: 20px;
-    }
-
-    .password1 input,
-    .password2 input {
+    .password input {
         text-align: center;
-        margin-left: 22px;
+        align-items: center;
         width: 200px;
         height: 88px;
     }
@@ -479,9 +526,8 @@
     }
 
     .form_container input[type="submit"] {
-        width: 180px;
+        width: 200px;
         height: 50px;
-        margin: 40px 0px 0px 28px;
     }
 
     .authDiv div {

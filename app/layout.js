@@ -1,20 +1,35 @@
+'use client'
 import "./globals.css";
 import Navbar from "./component/navbar";
 import Footer from "./component/footer";
+import { Inter } from "next/font/google";
+import { useState } from "react";
+import React from 'react';
+import { createContext } from 'react';
 
+export const loginContext = createContext('test');
 
-export const metadata = {
-  title: "Trust QR",
-  description: "This is Home page here you can navigate to explore plateform",
-};
+const inter = Inter({ subsets: ["latin"] });
 
 export default function RootLayout({ children }) {
+
+  const [isLogin, setStatus] = useState(false);
+
+  function setIdentifier(identifier) {
+    sessionStorage.setItem("Identifier", identifier);
+    setStatus(true);
+  };
+
   return (
+
     <html lang="en">
-      <body>
-        <Navbar />
-        {children}
-        <Footer />
+      <title>Trust QR</title>
+      <body className={inter.className}>
+        <loginContext.Provider value={setIdentifier}>
+          <Navbar  isLogin={isLogin} />
+          {children}
+          <Footer />
+        </loginContext.Provider>
       </body>
     </html>
   );

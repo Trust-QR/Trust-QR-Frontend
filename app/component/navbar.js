@@ -1,23 +1,19 @@
 'use client'
 import Link from "next/link";
 import Image from "next/image";
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useState, useContext } from "react";
 import styles from "./navbar.module.css";
 import { useRouter } from 'next/navigation';
-/**
- * This file is a client entry.
- */
 
 
 
 
-
-export default function Navbar() {
-  const [isOpen, setIsOpen] = useState(false); // for burger menu toggle
-  const [fix, setFix] = useState(false); // navbar fixing on the top
-  const [isLogin, setStatus] = useState(false); // For conditional rendering when login
+export default function Navbar({ isLogin }) {
+  console.log(`Navbar isLogin : ${isLogin}`);
+  const [isOpen, setIsOpen] = useState(false);
+  const [fix, setFix] = useState(false);
   const router = useRouter();
-
+  
 
   const handleMenuToggle = () => {
     setIsOpen(!isOpen);
@@ -38,16 +34,11 @@ export default function Navbar() {
     };
   }, [fix]);
 
-  useEffect(() => {
-    const id = sessionStorage.getItem('Identifier');
-    if (id)
-      setStatus(true);
-  }, []);
 
   function removeUser() {
     sessionStorage.clear();
     setStatus(false);
-    // router.push("/login");
+    router.push("/login");
   }
 
   return (
@@ -57,13 +48,12 @@ export default function Navbar() {
           <Link href={"/"}>
             <Image
               className={styles.img}
-              src="/hovercode.svg"
+              src="/logo.png"
               alt="logo"
-              width={100}
-              height={100}
+              width={200}
+              height={140}
               priority={true}
             ></Image>
-            {/* Trust QR */}
           </Link>
         </div>
 
@@ -77,15 +67,25 @@ export default function Navbar() {
 
           <div className={styles.authContainer} id={styles.authentication}>
             {isLogin ? (
-              <div id={styles.login}>
-                <Link
-                  href="/login"
-                  className={styles.auth}
-                  onClick={removeUser}
-                >
-                  Logout
-                </Link>
-              </div>
+              <>
+                <div id={styles.login}>
+                  <Link
+                    href="/dashboard"
+                    className={styles.auth}
+                  >
+                    Dashboard
+                  </Link>
+                </div>
+                <div id={styles.login}>
+                  <Link
+                    href="/login"
+                    className={styles.auth}
+                    onClick={removeUser}
+                  >
+                    Logout
+                  </Link>
+                </div>
+              </>
             ) : (
               <>
                 < div id={styles.signup}>
@@ -107,7 +107,7 @@ export default function Navbar() {
                   </Link>
                 </div>
               </>
-            )};
+            )}
           </div>
         </div>
 

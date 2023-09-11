@@ -1,17 +1,21 @@
 'use client'
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useContext } from 'react';
 import { useRouter } from 'next/navigation';
 import Link from 'next/link';
-import styles from '../signup/signup.module.css';
+import styles from './login.module.css';
+import { get_api_url } from '../utils'
+import {loginContext} from '../layout'
 
 export default function Login() {
-    const token = process.env["token"];
-    const url = process.env["url"];
+    // console.log('setIdentifier', props);
+    // const token = process.env["token"];
+    const url = get_api_url();
 
     const [result, setResults] = useState(null);
     const [formKey, setFormKey] = useState(0);
+    const login = useContext(loginContext);
     const router = useRouter();
-
+    // console.log('Login value and type in login page ', login, typeof (login));
 
     async function loginpHandler(event) {
 
@@ -27,7 +31,7 @@ export default function Login() {
             headers: {
                 'Content-Type': 'application/json',
                 'Accept': 'application/json',
-                'Authorization': `Bearer ${token}`
+                // 'Authorization': `Bearer ${token}`
             },
             body: JSON.stringify(postData),
         };
@@ -36,6 +40,7 @@ export default function Login() {
             const result = await response.json();
 
             if (!response.ok) {
+                console.log('Response ', response.ok)
                 window.alert("Something Went wrong");
             }
             if (result['id'] == false) {
@@ -44,14 +49,16 @@ export default function Login() {
             }
             else {
                 event.target.reset();
-                window.sessionStorage.setItem("Identifier", result["id"]);
+                const id = result["id"];
+                login(id)
+                // window.sessionStorage.setItem("Identifier", result["id"]);
+                // router.refresh()
                 router.push("/dashboard");
-                // window.alert("Successfully logged In");
                 console.log('Success');
             }
         } catch (error) {
             console.log(error)
-            setError('Something went wrong. Please try again later');
+            alert('Something went wrong. Please try again later');
         }
         setResults(null);
     }
@@ -77,7 +84,6 @@ export default function Login() {
                                     {/* <label htmlFor="password" required >Password : </label> */}
                                     <input type="password" name="password" id="password" required placeholder='Password' />
                                 </div>
-                                <div className={styles.forgot}>Forgot Password?</div>
                                 <div className={styles.lsmbtn}>
                                     <input type="submit" value="Login" id='smbtn' className={styles.smbtn} />
                                 </div>
