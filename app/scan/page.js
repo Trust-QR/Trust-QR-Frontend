@@ -2,10 +2,10 @@
 import { useState, useEffect } from 'react';
 import { useRouter } from 'next/navigation';
 import styles from './scan.module.css';
-import { get_api_url } from '../utils';
+import { getApiUrl } from '../utils';
 
 export default function Upload() {
-    const url = get_api_url();
+    const url = getApiUrl();
 
     const [formKey, setFormKey] = useState(0);
     const [results, setResults] = useState(null);
@@ -31,7 +31,7 @@ export default function Upload() {
         setResults(null);
         try {
 
-            const response = await fetch(`${url}api/product/upload`, options);
+            const response = await fetch(`${url}/api/product/upload`, options);
 
             console.log('Resonponse is ', response)
             const result = await response.json();

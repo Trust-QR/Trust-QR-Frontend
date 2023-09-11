@@ -3,13 +3,13 @@ import { useState, useEffect, useContext } from 'react';
 import { useRouter } from 'next/navigation';
 import Link from 'next/link';
 import styles from './login.module.css';
-import { get_api_url } from '../utils'
+import { getApiUrl } from '../utils'
 import {loginContext} from '../layout'
 
 export default function Login() {
     // console.log('setIdentifier', props);
     // const token = process.env["token"];
-    const url = get_api_url();
+    const url = getApiUrl();
 
     const [result, setResults] = useState(null);
     const [formKey, setFormKey] = useState(0);
@@ -36,7 +36,7 @@ export default function Login() {
             body: JSON.stringify(postData),
         };
         try {
-            const response = await fetch(`${url}api/users/login`, options);
+            const response = await fetch(`${url}/api/users/login`, options);
             const result = await response.json();
 
             if (!response.ok) {

@@ -56,6 +56,7 @@
 @media (max-width: 950px) {
   .container {
     max-width: 700px;
+    padding-top: 100px;
   }
   .container h1{
       font-size: 28px;

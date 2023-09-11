@@ -27,7 +27,7 @@ export default function Dashboard() {
 
 
           if (identifier == null) {
-            // router.push('/login')
+            router.push('/login')
             return
           }
 
@@ -170,7 +170,7 @@ export default function Dashboard() {
           ))}
         </tbody>
       </table>
-      {products.length == 0 && <h1>No Product Found</h1>}
+      {products.length == 0 && <div className={styles.heading}><h2>No Product Found</h2></div>}
     </div>
   );
 }

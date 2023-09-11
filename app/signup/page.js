@@ -3,7 +3,7 @@ import { useState ,useContext} from "react";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 import styles from "./signup.module.css";
-import { get_api_url } from '../utils'
+import { getApiUrl } from '../utils'
 import {loginContext} from '../layout'
 
 function passwordVal(password) {
@@ -20,7 +20,7 @@ function emailVal(email) {
 }
 
 export default function Signup() {
-  const url = get_api_url();
+  const url = getApiUrl();
   const [result, setResults] = useState(null);
   const [formKey, setFormKey] = useState(0);
   const router = useRouter();
@@ -72,7 +72,7 @@ export default function Signup() {
     // console.log("Props URL Printing here : ", url);
     // console.log(JSONdata);
     try {
-      const response = await fetch(`${url}api/users/signup`, options);
+      const response = await fetch(`${url}/api/users/signup`, options);
       // console.log("response : ",response)
       const result = await response.json();
 
@@ -91,7 +91,7 @@ export default function Signup() {
       }
     } catch (error) {
       console.log(error)
-      setError('Something went wrong. Please try again later');
+      
     }
     setResults(null);
   }

@@ -84,6 +84,9 @@
 
   
   @media (max-width: 950px) {
+    .container{
+      padding-top: 100px;
+    }
 
     .form input {
      font-size: 14px;

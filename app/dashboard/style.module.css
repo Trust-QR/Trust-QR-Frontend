@@ -27,7 +27,7 @@
 
 /* Table styles */
 .container table {
-  width: 80vw;
+  /* width: 80vw; */
   background-color: #fff;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   border-radius: 5px;
@@ -59,6 +59,11 @@
   text-decoration: none;
   border-radius: 5px;
   margin-bottom: 20px;
+}
+
+.heading h2{
+  margin-top: 20px;
+
 }
 
 .container a:hover {
@@ -104,6 +109,11 @@
 /* Button Hover Effect */
 .downloadButton:hover {
   background-color: #d39804; /* Darker blue on hover */
+}
+@media (max-width: 950px) {
+  .container{
+    padding-top: 100px;
+  }
 }
 
   @media (max-width: 300px) {
