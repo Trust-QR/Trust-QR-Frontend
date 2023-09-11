@@ -98,7 +98,14 @@ label.brandId {
     }
 }
 
+@media only screen and (max-width: 948px){
+    .html_form{
+        padding-top: 140px;
+    }
+
+}
 @media only screen and (min-width: 799px) and (max-width: 948px) {
+   
     .per_info {
         font-size: 22px;
     }

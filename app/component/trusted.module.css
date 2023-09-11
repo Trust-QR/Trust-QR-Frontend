@@ -8,6 +8,8 @@
     flex-direction: row;
     padding: 30px 60px;
     padding-bottom: 140px;
+    /* margin: auto; */
+    
 
 }
 
@@ -72,7 +74,11 @@
         margin: 0 12px;
     }
 }
-
+@media only screen and (max-width: 798.6px) {
+    .imgContainer{
+        margin-left: 40px;
+    }
+}
 @media only screen and (min-width: 560px) and (max-width: 798.6px) {
     .imgContainer {
         display: flex;

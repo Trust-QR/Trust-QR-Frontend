@@ -27,7 +27,9 @@ export default function RootLayout({ children }) {
       <body className={inter.className}>
         <loginContext.Provider value={setIdentifier}>
           <Navbar  isLogin={isLogin} />
+          <div className="minHeight">
           {children}
+          </div >
           <Footer />
         </loginContext.Provider>
       </body>
