@@ -11,7 +11,7 @@ export default function Footer() {
                 </div>
                 <p>Copyright © 2023 Trust QR, Inc.</p>
             </div>
-
+            
             <div className={styles.github}>
                 <Link
                     href="https://github.com/ValueHunt/"

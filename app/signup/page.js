@@ -91,7 +91,7 @@ export default function Signup() {
       }
     } catch (error) {
       console.log(error)
-      
+      // setError('Something went wrong. Please try again later');
     }
     setResults(null);
   }

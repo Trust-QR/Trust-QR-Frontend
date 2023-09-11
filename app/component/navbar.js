@@ -9,11 +9,10 @@ import { useRouter } from 'next/navigation';
 
 
 export default function Navbar({ isLogin }) {
-  console.log(`Navbar isLogin : ${isLogin}`);
   const [isOpen, setIsOpen] = useState(false);
   const [fix, setFix] = useState(false);
   const router = useRouter();
-  
+
 
   const handleMenuToggle = () => {
     setIsOpen(!isOpen);
