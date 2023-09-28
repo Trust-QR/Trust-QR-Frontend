@@ -20,7 +20,7 @@ To clone the project, open a terminal and navigate to the directory where you wa
 ```bash
 git clone https://github.com/Trust-QR/Trust-QR-Frontend.git
 ```
-Running `npm install`
+
 Once you have cloned the project and installed Node.js, you can install the project dependencies by running the following command:
 ```bash
 npm install
