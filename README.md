@@ -13,7 +13,8 @@ We have used these following technologies
 * Blockchain : Ganache & Brownie
 * Testing : Pytest
 
-[Frontend](https://github.com/Trust-QR/Trust-QR-Frontend/)
+# [Frontend](https://github.com/Trust-QR/Trust-QR-Frontend/)
+# [Backend](https://github.com/Trust-QR/Trust-QR-Backend/)
 
 # Cloning the project
 To clone the project, open a terminal and navigate to the directory where you want to clone the project. Then, run the following command:
